@@ -1,0 +1,295 @@
+반응형 1440px
+
+#sec2 swiper 관련 item
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <a href="#">
+        <img src="/img/menu/COFFEE/Americano.png" alt="">
+      </a>
+      <p>아메리카노</p>
+    </div>
+    <div class="swiper-slide">
+      <a href="#">
+        <img src="/img/menu/COFFEE/Caffe_Latte.png" alt="">
+      </a>
+      <p>카페 라떼</p>
+    </div>
+    <div class="swiper-slide">
+      <a href="#">
+        <img src="/img/menu/COFFEE/Caffe_Mocha.png" alt="">
+      </a>
+      <p>카페 모카</p>
+    </div>
+    <div class="swiper-slide">
+      <a href="#">
+        <img src="/img/menu/COFFEE/Caramel_Macchiato.png" alt="">
+      </a>
+      <p>카라멜 마키아또</p>
+    </div>
+    <div class="swiper-slide">
+      <a href="#">
+        <img src="/img/menu/COFFEE/affogato.png" alt="">
+      </a>
+      <p>아포가토</p>
+    </div>
+  </div>
+  <div class="btn_prev_menu btn_menu"><img src="/img/icon/ico_arrow_left.svg" alt=""></div>
+  <div class="btn_next_menu btn_menu"><img src="/img/icon/ico_arrow_right.svg" alt=""></div>
+</div>
+</div>
+<div class="menu_item_2">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/LatteChocolateTea/Black_Sugar_Bubble_Tea.png" alt="">
+        </a>
+        <p>흑당 버블티</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/LatteChocolateTea/Honey_Quince_Tea.png" alt="">
+        </a>
+        <p>꿀모과차</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/LatteChocolateTea/Pink_Pineapple_Chamomile_Tea.png" alt="">
+        </a>
+        <p>핑크 파인 캐모마일티</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/LatteChocolateTea/Royal_Milk_Bubble_Tea.png" alt="">
+        </a>
+        <p>로얄 밀크 버블티</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/LatteChocolateTea/White Chocolate.png" alt="">
+        </a>
+        <p>화이트초코</p>
+      </div>
+    </div>
+    <div class="btn_prev_menu btn_menu"><img src="/img/icon/ico_arrow_left.svg" alt=""></div>
+    <div class="btn_next_menu btn_menu"><img src="/img/icon/ico_arrow_right.svg" alt=""></div>
+  </div>
+</div>
+<div class="menu_item_3">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/HollyccinoBingsu/Cold_Brew_Mocha_Hollyccino.png" alt="">
+        </a>
+        <p>콜드브루 모카 할리치노</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/HollyccinoBingsu/Hazelnut_Chocochip_Hollyccino.png" alt="">
+        </a>
+        <p>헤이즐넛 초코 할리치노</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/HollyccinoBingsu/Jeju_Matcha_Hollyccino.png" alt="">
+        </a>
+        <p>제주 말차 할리치노</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/HollyccinoBingsu/Mint_Chocochip_Hollyccino.png" alt="">
+        </a>
+        <p>민트 초코칩 할리치노</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/HollyccinoBingsu/Strawberry_Cheese_Cake_Hollyccino.png" alt="">
+        </a>
+        <p>딸기 치즈케익 할리치노</p>
+      </div>
+    </div>
+    <div class="btn_prev_menu btn_menu"><img src="/img/icon/ico_arrow_left.svg" alt=""></div>
+    <div class="btn_next_menu btn_menu"><img src="/img/icon/ico_arrow_right.svg" alt=""></div>
+  </div>
+</div>
+<div class="menu_item_4">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/SmoothieJuice/Jeju_Kumquat_Orange_Smoothie.png" alt="">
+        </a>
+        <p>제주 금귤 오렌지 스무디</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/SmoothieJuice/Orange_Grapefruit_Juice.png" alt="">
+        </a>
+        <p>오렌지 자몽 생과일 주스</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/SmoothieJuice/Apple_Beet_Juice.png" alt="">
+        </a>
+        <p>사과 비트 착즙 주스</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/SmoothieJuice/Apple_Mango_Smoothie.png" alt="">
+        </a>
+        <p>애플망고 스무디</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/SmoothieJuice/Peach_Strawberry_Blended.png" alt="">
+        </a>
+        <p>피치 딸기 블렌디드</p>
+      </div>
+    </div>
+    <div class="btn_prev_menu btn_menu"><img src="/img/icon/ico_arrow_left.svg" alt=""></div>
+    <div class="btn_next_menu btn_menu"><img src="/img/icon/ico_arrow_right.svg" alt=""></div>
+  </div>
+</div>
+<div class="menu_item_5">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/Sparkling/Peach_Plum_Sparkling.png" alt="">
+        </a>
+        <p>복숭아 자두 스파클링</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/Sparkling/Yuzu_Grapefruit_Sparkling.png" alt="">
+        </a>
+        <p>유자몽 스파클링</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/Sparkling/Green_Grape_Sparkling.png" alt="">
+        </a>
+        <p>청포도 스파클링</p>
+      </div>
+    </div>
+    <div class="btn_prev_menu btn_menu"><img src="/img/icon/ico_arrow_left.svg" alt=""></div>
+    <div class="btn_next_menu btn_menu"><img src="/img/icon/ico_arrow_right.svg" alt=""></div>
+  </div>
+</div>
+<div class="menu_item_6">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/Food/Egg_Mayo_Salt_Butter_Bread.png" alt="">
+        </a>
+        <p>에그마요 소금빵</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/Food/Mango_Orange_Round_Cake.png" alt="">
+        </a>
+        <p>망고오렌지 케이크</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/Food/AOP_Butter_Croissant.png" alt="">
+        </a>
+        <p>AOP 버터 크루아상</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/Food/Triple_Chocolate_Cake.png" alt="">
+        </a>
+        <p>트리플 초코 케이크</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/Food/Fresh_Chicken_Sandwich.png" alt="">
+        </a>
+        <p>닭가슴살 샌드위치</p>
+      </div>
+    </div>
+    <div class="btn_prev_menu btn_menu"><img src="/img/icon/ico_arrow_left.svg" alt=""></div>
+    <div class="btn_next_menu btn_menu"><img src="/img/icon/ico_arrow_right.svg" alt=""></div>
+  </div>
+</div>
+<div class="menu_item_7">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Goods/HOLLYBEAR_COOLER_POUCH.png" alt="">
+        </a>
+        <p>할리베어 보냉파우치</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Goods/SIGNATURE_TUMBLER_BLACK.png" alt="">
+        </a>
+        <p>시그니처 텀블러(블랙)</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Goods/New_Signiture_Mug_Red.png" alt="">
+        </a>
+        <p>뉴시그니처 머그(레드)</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Goods/Handle_Pouch.png" alt="">
+        </a>
+        <p>핸들 파우치</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Goods/Wooden_Cereal_Bowl_Spoon_Set.png" alt="">
+        </a>
+        <p>우드 시리얼 세트</p>
+      </div>
+    </div>
+    <div class="btn_prev_menu btn_menu"><img src="/img/icon/ico_arrow_left.svg" alt=""></div>
+    <div class="btn_next_menu btn_menu"><img src="/img/icon/ico_arrow_right.svg" alt=""></div>
+  </div>
+</div>
+<div class="menu_item_8">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Foods/Heart_Pie.png" alt="">
+        </a>
+        <p>하트파이</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Foods/Pressed_Croissant.png" alt="">
+        </a>
+        <p>크룽지</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Foods/Signature_Americano_Mini.png" alt="">
+        </a>
+        <p>시그니처 아메리카노</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Foods/Signature_Drip_Bag.png" alt="">
+        </a>
+        <p>시그니처 드립백</p>
+      </div>
+      <div class="swiper-slide">
+        <a href="#">
+          <img src="/img/menu/MD_Foods/Cranberry_White_Chocolate_Cookie.png" alt="">
+        </a>
+        <p>크랜베리 화이트초코</p>
+      </div>
+    </div>
+    <div class="btn_prev_menu btn_menu"><img src="/img/icon/ico_arrow_left.svg" alt=""></div>
+    <div class="btn_next_menu btn_menu"><img src="/img/icon/ico_arrow_right.svg" alt=""></div>
+  </div>
+</div>

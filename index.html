@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>할리스</title>
+  
+  <!-- favicon -->
+  <link rel="shortcut icon" href="https://www.hollys.co.kr//favicon.ico">
+  
+  <!-- style sheet -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/font.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- java script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js" defer></script> 
+
+  <!-- 
+  a href="javascript:void(0)" 
+  문제 없는지, 어느 용도로 쓰이는지 추후 다시 확인
+  -->
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <div class="header_wrap">
+        <h1 class="header_logo">
+          <a href="\"><span class="blind">HOLLYS</span></a>
+        </h1>
+        <nav id="gnb">
+          <ul class="gnb_dep1">
+            <li class="dep1">
+              <a href="javascript:void(0)" class="dep1_link"><span>HOLLYS MENU</span></a>
+              <ul class="gnb_dep2">
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">COFFEE</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">라떼·초콜릿·티 </a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">할리치노</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">스무디·주스</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">스파클링</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">푸드</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">MD상품</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">MD식품</a></li>
+              </ul>
+            </li>
+            <li class="dep1">
+              <a href="javascript:void(0)" class="dep1_link"><span>HOLLYS MALL</span></a>
+              <ul class="gnb_dep2">
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">할리스콘</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">할리스카드</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">E-store</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">구매내역</a></li>
+              </ul>
+            </li>
+            <li class="dep1">
+              <a href="javascript:void(0)" class="dep1_link"><span>MEMBERSHIP</span></a>
+              <ul class="gnb_dep2">
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">스마트오더</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">멤버십 혜택</a></li>
+              </ul>
+            </li>
+            <li class="dep1">
+              <a href="javascript:void(0)" class="dep1_link"><span>NEWS</span></a>
+              <ul class="gnb_dep2">
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">공지</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">이벤트</a></li>
+              </ul>
+            </li>
+            <li class="dep1">
+              <a href="javascript:void(0)" class="dep1_link"><span>STORE</span></a>
+              <ul class="gnb_dep2">
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">매장검색</a></li>
+              </ul>
+            </li>
+            <li class="dep1">
+              <a href="javascript:void(0)" class="dep1_link"><span>HOLLYS is</span></a>
+              <ul class="gnb_dep2 widtharea">
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">HOLLYS</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">할리스 위치 및 연락처</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">채용 안내</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">가맹문의 및 절차</a></li>
+                <li class="dep2"><a href="javascript:void(0)" class="dep2_link">B2B사업/케이터링 소개</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_util">
+          <a href="javascript:void(0)">LOGIN</a>
+          <div class="lang_wrap">
+            <button>
+              KOR<i class="ri-arrow-down-s-fill"></i>
+              <span class="blind">언어선택</span>
+            </button>
+            <ul>
+              <li><a href="javascript:void(0)">KOR</a></li>
+              <li><a href="javascript:void(0)">ENG</a></li>
+            </ul>
+          </div>
+          <button class="btn_allmenu_open">
+            <i class="ri-menu-line"></i>
+            <span class="blind">전체메뉴보기</span>
+          </button>
+        </div>
+        <div id="allmenu">
+          <button class="btn_allmenu_close">
+            <i class="ri-close-fill"></i>
+            <span class="blind">전체메뉴닫기</span>
+          </button>
+          <div class="allmenu_left">
+            <div class="allmenu_left_txt">
+              <dl>
+                <div>
+                  <dt>대표전화</dt>
+                  <dd>02-2188-7100</dd>
+                </div>
+                <div>
+                  <dt>가맹문의</dt>
+                  <dd>02-6350-7229</dd>
+                </div>
+              </dl>
+              <p>COPYRIGHT &copy; KG F&B. ALL Rights Reserved</p>
+            </div>
+          </div>
+          <div class="allmenu_right">
+            <img src="/img/logo/HOLLYS_logo.png" alt="">
+            <ul class="dep1">
+              <li>
+                <a href="javascript:void(0)">MENU</a>
+                <ul class="dep2">
+                  <li><a href="javascript:void(0)">COFFEE</a></li>
+                  <li><a href="javascript:void(0)">라떼·초콜릿·티 </a></li>
+                  <li><a href="javascript:void(0)">할리치노</a></li>
+                  <li><a href="javascript:void(0)">스무디·주스</a></li>
+                  <li><a href="javascript:void(0)">스파클링</a></li>
+                  <li><a href="javascript:void(0)">푸드</a></li>
+                  <li><a href="javascript:void(0)">MD상품</a></li>
+                  <li><a href="javascript:void(0)">MD식품</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)">HOLLYS MALL</a>
+                <ul class="dep2">
+                  <li><a href="javascript:void(0)">할리스콘</a></li>
+                  <li><a href="javascript:void(0)">할리스카드</a></li>
+                  <li><a href="javascript:void(0)">E-store</a></li>
+                  <li><a href="javascript:void(0)">구매내역</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)">MEMBERSHIP</a>
+                <ul class="dep2">
+                  <li><a href="javascript:void(0)">스마트오더</a></li>
+                  <li><a href="javascript:void(0)">멤버십 혜택</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)">NEWS</a>
+                <ul class="dep2">
+                  <li><a href="javascript:void(0)">공지</a></li>
+                  <li><a href="javascript:void(0)">이벤트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)">STORE</a>
+                <ul class="dep2">
+                  <li><a href="javascript:void(0)">매장검색</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)">HOLLYS is</a>
+                <ul class="dep2">
+                  <li><a href="javascript:void(0)">HOLLYS</a></li>
+                  <li><a href="javascript:void(0)">할리스 위치 및 연락처</a></li>
+                  <li><a href="javascript:void(0)">채용 안내</a></li>
+                  <li><a href="javascript:void(0)">가맹문의 및 절차</a></li>
+                  <li><a href="javascript:void(0)">B2B사업/케이터링 소개</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- <div class="quick_menu"> -->
+    <!-- quick_menu가 js에서 움직이는 변수로 지정되어 있는데 변수로 지정되어 있는 요소한테 background-color 줬을때 background-color 속성이 함께 이동하지 않음 --> 
+    <!-- 인라인 css가 아니고 외부 css 파일에서 적용되어서 js에서 인식하지 못하는 걸수도 bottom 값 또한 js 파일 내에서 getComputedStyle(js 참고)로 가져왔음 -->
+    <!-- bottom 외에 있는 style 속성은 position, right 뿐인데 pos:absolute와, right:40은 처음 quick_menu의 위치만 참고할 뿐, js로 인해 영향받지 않는 건가 -->
+    <!-- top: calc(100% - 80px); transform: translateY(-100%); bottom: 80px; 대신 쓰니까 해결됨 top과 bottom의 값이 함께 쓰여서 생긴 오류인듯 -->
+      <ul class="quick_menu">
+        <li><a href="javascript:void(0)">
+          <i class="ri-store-2-fill"></i>
+          <p>가맹문의</p>
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <i class="ri-customer-service-fill"></i>
+          <p>고객문의</p>
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <i class="ri-truck-line"></i>
+          <p>커피차안내</p>
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <i class="ri-shake-hands-fill"></i>
+          <p>기업특판</p>
+        </a></li>
+      </ul>
+    <!-- </div> -->
+    
+    <main id="main_content">
+      <section id="sec1">
+        <div class="swiper sec1_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/img/mainBanner/pc/mainBanner1_pc.png" alt="" class="pc">
+              <img src="/img/mainBanner/mo/mainBanner1_mo.png" alt="" class="mo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/mainBanner/pc/mainbanner2_pc.png" alt="" class="pc">
+              <img src="/img/mainBanner/mo/mainBanner2_mo.png" alt="" class="mo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/mainBanner/pc/mainBanner3_pc.png" alt="" class="pc">
+              <img src="/img/mainBanner/mo/mainbanner3_mo.png" alt="" class="mo">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+
+      <section id="sec2">
+        <div class="container">
+          <h2>BEST MENU</h2>
+          <ul class="menu_cat">
+            <li class="active"><a href="javascript:void(0)">COFFEE</a></li>
+            <li><a href="javascript:void(0)">라떼·초콜릿·티 </a></li>
+            <li><a href="javascript:void(0)">할리치노·빙수</a></li>
+            <li><a href="javascript:void(0)">스무디·주스</a></li>
+            <li><a href="javascript:void(0)">스파클링</a></li>
+            <li><a href="javascript:void(0)">푸드</a></li>
+            <li><a href="javascript:void(0)">MD상품</a></li>
+            <li><a href="javascript:void(0)">MD식품</a></li>
+          </ul>
+        </div>
+        <div class="menu_item">
+          <div class="swiper sec2_swiper">
+            <div class="swiper-wrapper">
+
+            </div>
+
+            <div class="sec2_btn_prev sec2_btn">
+              <img src="/img/icon/ico_arrow_left.svg" alt="">
+            </div>
+            <div class="sec2_btn_next sec2_btn">
+              <img src="/img/icon/ico_arrow_right.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+        <button class="btn_common view_more">VIEW MORE</button>
+      </section>
+
+
+      <section id="sec3">
+        <div class="sec3_img"> <!-- background img -->
+          <div class="sec3_wrap"> <!-- background blur -->
+            <div class="sec3_txt">
+              <h2>WITH HOLLYS</h2>
+              <p>할리스 멤버십 ‘Crown’, 할리스 카드로</p>
+              <p>다양한 혜택을 받고<br>소중한 사람들에게 마음을 전해보세요</p>
+            </div>
+            <div class="sec3_btn_wrap">
+              <button class="btn_common view_more">할리스 멤버십</button>
+              <button class="btn_common view_more">할리스 카드</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="sec4">
+        <div class="container">
+          <h2>STORE</h2>
+          <div class="store_info">
+            <div class="store_search"> <!-- background img -->
+              <div class="store_search_wrap"> <!-- background gradient -->
+                <p>
+                  <span class="pc">가까운 할리스 매장을 찾아보세요</span>
+                  <span class="mo">할리스 가맹점</span>
+                </p>
+                <form>
+                  <input type="text" placeholder="매장이름을 입력해주세요">
+                  <button type="submit">
+                    <i class="ri-search-line"></i>
+                    <span class="blind">검색하기</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="store_new">
+              <div class="store_new_wrap">
+                <p>일상에 즐거움을</p>
+                <p>할리스 신규매장</p>
+              </div>
+              <dl class="store_item">
+                <div>
+                  <dt>할리스 AK&세종점</dt>
+                  <dd>세종특별자치시 한누리대로 411</dd>
+                  <dd>044-960-5377</dd>
+                </div> 
+                <div>
+                  <dt>할리스 일산장항점</dt>
+                  <dd>고양시 일산동구 장항동 769-2</dd>
+                  <dd>031-903-9991</dd>
+                </div>
+                <div>
+                  <dt>할리스 경북도청점</dt>
+                  <dd>예천군 호명읍 산합리 1427</dd>
+                  <dd>054-654-0048</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="sec5">
+        <div class="container">
+          <h2>INSTAGRAM</h2>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)"><img src="/img/instagram/insta1.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer_top">
+          <ul class="footer_top_menu">
+            <li><a href="javascript:void(0)">오피스 커피 서비스</a></li>
+            <li><a href="javascript:void(0)">신채널 유통</a></li>
+            <li><a href="javascript:void(0)">기업 사내카페 컨설팅</a></li>
+            <li><a href="javascript:void(0)">무빙 딜라이트</a></li>
+            <li><a href="javascript:void(0)">가맹문의 및 절차</a></li>
+          </ul>
+          <dl class="footer_top_cs">
+            <div>
+              <dt>Address</dt>
+              <dd>서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</dd>
+            </div>
+            <div>
+              <dt>Customer Center</dt>
+              <dd>고객센터 : 02-2188-7100</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_bottom_left">
+            <ul class="footer_bottom_menu">
+              <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+              <li><a href="javascript:void(0)">이용약관</a></li>
+              <li><a href="javascript:void(0)">멤버십이용약관</a></li>
+              <li><a href="javascript:void(0)">할리스카드이용약관</a></li>
+              <li><a href="javascript:void(0)">고객문의</a></li>
+              <li><a href="javascript:void(0)">BI 소개</a></li>
+            </ul>
+            <div class="footer_bottom_info">
+              <ul class="footer_bottom_cs">
+                <li class="mo">서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</li>
+                <li class="mo">고객센터 : 02-2188-7100</li>
+                <li>(주)케이지에프앤비</li>
+                <li>대표이사 : 이종현</li>
+                <li>사업자 등록번호 : 211-87-61044</li>
+                <li>통신판매업 : 제2019-서울종로-0193호</li>
+                <li>대표전화 : 02-2188-7100</li>
+                <li>가맹문의 : 02-6350-7229</li>
+              </ul>
+            </div>
+            <p class="footer_bottom_copy">COPYRIGHT &copy; KG F&B. ALL Rights Reserved</p>
+          </div>
+          <div class="footer_sns">
+            <a href="javascript:void(0)">
+              <img src="/img/footer/footer_logo_insta.png" alt="">
+              <span class="blind">인스타그램</span>
+            </a>
+            <a href="javascript:void(0)">
+              <img src="/img/footer/footer_logo_facebook.png" alt="">
+              <span class="blind">페이스북</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
