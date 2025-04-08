@@ -528,22 +528,30 @@ section {
   font-size: var(--main-h2);
   font-weight: 700;
 }
-#sec2 .menu_cat_wrapper {
+#sec2 .menu_cat_wrap {
   display: flex;
-  width: 100%;
   overflow: hidden;
+  width: 100%;
   margin-bottom: 8rem;
+}
+#sec2 .menu_cat_btn {
+  font-size: 4rem;
+  stroke-width: 3px;
+}
+#sec2 .menu_cat_visible {
+  overflow: hidden;
 }
 #sec2 .menu_cat {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem 2.4rem;
+  will-change: transform;
 }
 #sec2 .menu_cat li {
   height: 4rem;
   font-size: 2rem;
   font-weight: 400;
   color: rgba(17, 17, 17, 0.7);
+  flex-shrink: 0;
 }
 #sec2 .menu_cat li.active {
   color: var(--main-color);
@@ -602,11 +610,11 @@ section {
   width: 48px;
   transform: translateX(calc(447px / 2));
 }
-#sec2 .sec2_btn {
+#sec2 .view_more {
   gap: 2rem;
   margin: 0 auto;
 }
-#sec2 .sec2_btn:hover {
+#sec2 .view_more:hover {
   background: rgba(17, 17, 17, 0.1);
   border: 1px solid rgba(17, 17, 17, 0.5);
 }
@@ -618,7 +626,7 @@ section {
 
 /* main_sec3 */
 #sec3 .sec3_img {
-  background: url(/img/membership_giftcard/Mem_Gift.png) no-repeat center;
+  background: url(img/membership_giftcard/Mem_Gift.png) no-repeat center;
 }
 #sec3 .sec3_wrap {
   position: relative;

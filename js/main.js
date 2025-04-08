@@ -160,140 +160,140 @@ const sec1swiper = new Swiper('.sec1_swiper', {
 
 const coffeeMenu = [
   {
-    img: '<img src="/img/menu/COFFEE/Americano.png" alt="아메리카노">',
+    img: '<img src="img/menu/COFFEE/Americano.png" alt="아메리카노">',
     name: '아메리카노'
   }, {
-    img: '<img src="/img/menu/COFFEE/Caffe_Latte.png" alt="카페 라떼">',
+    img: '<img src="img/menu/COFFEE/Caffe_Latte.png" alt="카페 라떼">',
     name: '카페 라떼'
   }, {
-    img: '<img src="/img/menu/COFFEE/Caffe_Mocha.png" alt="카페 모카">',
+    img: '<img src="img/menu/COFFEE/Caffe_Mocha.png" alt="카페 모카">',
     name: '카페 모카'
   }, {
-    img: '<img src="/img/menu/COFFEE/Caramel_Macchiato.png" alt=" 마키아또">',
+    img: '<img src="img/menu/COFFEE/Caramel_Macchiato.png" alt=" 마키아또">',
     name: '카라멜 마키아또'
   }, {
-    img: '<img src="/img/menu/COFFEE/affogato.png" alt="아포가토">',
+    img: '<img src="img/menu/COFFEE/affogato.png" alt="아포가토">',
     name: '아포가토'
   }
 ]
 const latteMenu = [
   {
-    img: '<img src="/img/menu/LatteChocolateTea/Black_Sugar_Bubble_Tea.png" alt="">',
+    img: '<img src="img/menu/LatteChocolateTea/Black_Sugar_Bubble_Tea.png" alt="">',
     name: '흑당 버블티'
   }, {
-    img: '<img src="/img/menu/LatteChocolateTea/Honey_Quince_Tea.png" alt="">',
+    img: '<img src="img/menu/LatteChocolateTea/Honey_Quince_Tea.png" alt="">',
     name: '꿀 모과차'
   }, {
-    img: '<img src="/img/menu/LatteChocolateTea/Pink_Pineapple_Chamomile_Tea.png" alt="">',
+    img: '<img src="img/menu/LatteChocolateTea/Pink_Pineapple_Chamomile_Tea.png" alt="">',
     name: '핑크 파인 캐모마일티'
   }, {
-    img: '<img src="/img/menu/LatteChocolateTea/Royal_Milk_Bubble_Tea.png" alt="">',
+    img: '<img src="img/menu/LatteChocolateTea/Royal_Milk_Bubble_Tea.png" alt="">',
     name: '로얄 밀크 버블티'
   }, {
-    img: '<img src="/img/menu/LatteChocolateTea/White Chocolate.png" alt="">',
+    img: '<img src="img/menu/LatteChocolateTea/White Chocolate.png" alt="">',
     name: '화이트 초코'
   }
 ]
 const hollyccinoMenu = [
   {
-    img: '<img src="/img/menu/HollyccinoBingsu/Cold_Brew_Mocha_Hollyccino.png" alt="콜드브루 모카 할리치노">',
+    img: '<img src="img/menu/HollyccinoBingsu/Cold_Brew_Mocha_Hollyccino.png" alt="콜드브루 모카 할리치노">',
     name: '콜드브루 모카 할리치노'
   }, {
-    img: '<img src="/img/menu/HollyccinoBingsu/Hazelnut_Chocochip_Hollyccino.png" alt="헤이즐넛 초코 할리치노">',
+    img: '<img src="img/menu/HollyccinoBingsu/Hazelnut_Chocochip_Hollyccino.png" alt="헤이즐넛 초코 할리치노">',
     name: '헤이즐넛 초코 할리치노'
   }, {
-    img: '<img src="/img/menu/HollyccinoBingsu/Jeju_Matcha_Hollyccino.png" alt="제주 말차 할리치노">',
+    img: '<img src="img/menu/HollyccinoBingsu/Jeju_Matcha_Hollyccino.png" alt="제주 말차 할리치노">',
     name: '제주 말차 할리치노'
   }, {
-    img: '<img src="/img/menu/HollyccinoBingsu/Mint_Chocochip_Hollyccino.png" alt="민트 초코칩 할리치노">',
+    img: '<img src="img/menu/HollyccinoBingsu/Mint_Chocochip_Hollyccino.png" alt="민트 초코칩 할리치노">',
     name: '민트 초코칩 할리치노'
   }, {
-    img: '<img src="/img/menu/HollyccinoBingsu/Strawberry_Cheese_Cake_Hollyccino.png" alt="딸기 치즈케익 할리치노">',
+    img: '<img src="img/menu/HollyccinoBingsu/Strawberry_Cheese_Cake_Hollyccino.png" alt="딸기 치즈케익 할리치노">',
     name: '딸기 치즈케익 할리치노'
   }
 ];
 
 const smoothieMenu = [
   {
-    img: '<img src="/img/menu/SmoothieJuice/Jeju_Kumquat_Orange_Smoothie.png" alt="제주 금귤 오렌지 스무디">',
+    img: '<img src="img/menu/SmoothieJuice/Jeju_Kumquat_Orange_Smoothie.png" alt="제주 금귤 오렌지 스무디">',
     name: '제주 금귤 오렌지 스무디'
   }, {
-    img: '<img src="/img/menu/SmoothieJuice/Orange_Grapefruit_Juice.png" alt="오렌지 자몽 생과일 주스">',
+    img: '<img src="img/menu/SmoothieJuice/Orange_Grapefruit_Juice.png" alt="오렌지 자몽 생과일 주스">',
     name: '오렌지 자몽 생과일 주스'
   }, {
-    img: '<img src="/img/menu/SmoothieJuice/Apple_Beet_Juice.png" alt="사과 비트 착즙 주스">',
+    img: '<img src="img/menu/SmoothieJuice/Apple_Beet_Juice.png" alt="사과 비트 착즙 주스">',
     name: '사과 비트 착즙 주스'
   }, {
-    img: '<img src="/img/menu/SmoothieJuice/Apple_Mango_Smoothie.png" alt="애플망고 스무디">',
+    img: '<img src="img/menu/SmoothieJuice/Apple_Mango_Smoothie.png" alt="애플망고 스무디">',
     name: '애플망고 스무디'
   }, {
-    img: '<img src="/img/menu/SmoothieJuice/Peach_Strawberry_Blended.png" alt="피치 딸기 블렌디드">',
+    img: '<img src="img/menu/SmoothieJuice/Peach_Strawberry_Blended.png" alt="피치 딸기 블렌디드">',
     name: '피치 딸기 블렌디드'
   }
 ];
 const sparklingMenu = [
   {
-    img: '<img src="/img/menu/Sparkling/Peach_Plum_Sparkling.png" alt="복숭아 자두 스파클링">',
+    img: '<img src="img/menu/Sparkling/Peach_Plum_Sparkling.png" alt="복숭아 자두 스파클링">',
     name: '복숭아 자두 스파클링'
   }, {
-    img: '<img src="/img/menu/Sparkling/Yuzu_Grapefruit_Sparkling.png" alt="유자몽 스파클링">',
+    img: '<img src="img/menu/Sparkling/Yuzu_Grapefruit_Sparkling.png" alt="유자몽 스파클링">',
     name: '유자몽 스파클링'
   }, {
-    img: '<img src="/img/menu/Sparkling/Green_Grape_Sparkling.png" alt="청포도 스파클링">',
+    img: '<img src="img/menu/Sparkling/Green_Grape_Sparkling.png" alt="청포도 스파클링">',
     name: '청포도 스파클링'
   }
 ];
 const foodMenu = [
   {
-    img: '<img src="/img/menu/Food/Egg_Mayo_Salt_Butter_Bread.png" alt="에그마요 소금빵">',
+    img: '<img src="img/menu/Food/Egg_Mayo_Salt_Butter_Bread.png" alt="에그마요 소금빵">',
     name: '에그마요 소금빵'
   }, {
-    img: '<img src="/img/menu/Food/Mango_Orange_Round_Cake.png" alt="망고오렌지 케이크">',
+    img: '<img src="img/menu/Food/Mango_Orange_Round_Cake.png" alt="망고오렌지 케이크">',
     name: '망고오렌지 케이크'
   }, {
-    img: '<img src="/img/menu/Food/AOP_Butter_Croissant.png" alt="AOP 버터 크루아상">',
+    img: '<img src="img/menu/Food/AOP_Butter_Croissant.png" alt="AOP 버터 크루아상">',
     name: 'AOP 버터 크루아상'
   }, {
-    img: '<img src="/img/menu/Food/Triple_Chocolate_Cake.png" alt="트리플 초코 케이크">',
+    img: '<img src="img/menu/Food/Triple_Chocolate_Cake.png" alt="트리플 초코 케이크">',
     name: '트리플 초코 케이크'
   }, {
-    img: '<img src="/img/menu/Food/Fresh_Chicken_Sandwich.png" alt="닭가슴살 샌드위치">',
+    img: '<img src="img/menu/Food/Fresh_Chicken_Sandwich.png" alt="닭가슴살 샌드위치">',
     name: '닭가슴살 샌드위치'
   }
 ];
 const mdGoodsMenu = [
   {
-    img: '<img src="/img/menu/MD_Goods/HOLLYBEAR_COOLER_POUCH.png" alt="할리베어 보냉파우치">',
+    img: '<img src="img/menu/MD_Goods/HOLLYBEAR_COOLER_POUCH.png" alt="할리베어 보냉파우치">',
     name: '할리베어 보냉파우치'
   }, {
-    img: '<img src="/img/menu/MD_Goods/SIGNATURE_TUMBLER_BLACK.png" alt="시그니처 텀블러(블랙)">',
+    img: '<img src="img/menu/MD_Goods/SIGNATURE_TUMBLER_BLACK.png" alt="시그니처 텀블러(블랙)">',
     name: '시그니처 텀블러(블랙)'
   }, {
-    img: '<img src="/img/menu/MD_Goods/New_Signiture_Mug_Red.png" alt="뉴시그니처 머그(레드)">',
+    img: '<img src="img/menu/MD_Goods/New_Signiture_Mug_Red.png" alt="뉴시그니처 머그(레드)">',
     name: '뉴시그니처 머그(레드)'
   }, {
-    img: '<img src="/img/menu/MD_Goods/Handle_Pouch.png" alt="핸들 파우치">',
+    img: '<img src="img/menu/MD_Goods/Handle_Pouch.png" alt="핸들 파우치">',
     name: '핸들 파우치'
   }, {
-    img: '<img src="/img/menu/MD_Goods/Wooden_Cereal_Bowl_Spoon_Set.png" alt="우드 시리얼 세트">',
+    img: '<img src="img/menu/MD_Goods/Wooden_Cereal_Bowl_Spoon_Set.png" alt="우드 시리얼 세트">',
     name: '우드 시리얼 세트'
   }
 ];
 const mdFoodsMenu = [
   {
-    img: '<img src="/img/menu/MD_Foods/Heart_Pie.png" alt="하트파이">',
+    img: '<img src="img/menu/MD_Foods/Heart_Pie.png" alt="하트파이">',
     name: '하트파이'
   }, {
-    img: '<img src="/img/menu/MD_Foods/Pressed_Croissant.png" alt="크룽지">',
+    img: '<img src="img/menu/MD_Foods/Pressed_Croissant.png" alt="크룽지">',
     name: '크룽지'
   }, {
-    img: '<img src="/img/menu/MD_Foods/Signature_Americano_Mini.png" alt="시그니처 아메리카노">',
+    img: '<img src="img/menu/MD_Foods/Signature_Americano_Mini.png" alt="시그니처 아메리카노">',
     name: '시그니처 아메리카노'
   }, {
-    img: '<img src="/img/menu/MD_Foods/Signature_Drip_Bag.png" alt="시그니처 드립백">',
+    img: '<img src="img/menu/MD_Foods/Signature_Drip_Bag.png" alt="시그니처 드립백">',
     name: '시그니처 드립백'
   }, {
-    img: '<img src="/img/menu/MD_Foods/Cranberry_White_Chocolate_Cookie.png" alt="크랜베리 화이트초코">',
+    img: '<img src="img/menu/MD_Foods/Cranberry_White_Chocolate_Cookie.png" alt="크랜베리 화이트초코">',
     name: '크랜베리 화이트초코'
   }
 ];
