@@ -9,14 +9,14 @@
   <link rel="shortcut icon" href="https://www.hollys.co.kr//favicon.ico">
   
   <!-- style sheet -->
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/font.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <!-- java script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/js/main.js" defer></script> 
+  <script src="js/main.js" defer></script> 
 
   <!-- 
   a href="javascript:void(0)" 
@@ -233,17 +233,23 @@
 
       <section id="sec2">
         <div class="container">
-          <h2>BEST MENU</h2>
-          <ul class="menu_cat">
-            <li class="active"><a href="javascript:void(0)">COFFEE</a></li>
-            <li><a href="javascript:void(0)">라떼·초콜릿·티 </a></li>
-            <li><a href="javascript:void(0)">할리치노·빙수</a></li>
-            <li><a href="javascript:void(0)">스무디·주스</a></li>
-            <li><a href="javascript:void(0)">스파클링</a></li>
-            <li><a href="javascript:void(0)">푸드</a></li>
-            <li><a href="javascript:void(0)">MD상품</a></li>
-            <li><a href="javascript:void(0)">MD식품</a></li>
-          </ul>
+          <h2>BEST MENU</h2>    
+          <div class="menu_cat_wrapper">
+            <button class="menu_cat_prev"><i class="ri-arrow-left-s-line"></i></button>
+            <div class="menu_cat_visible">
+              <ul class="menu_cat">
+                <li class="active"><a href="javascript:void(0)">COFFEE</a></li>
+                <li><a href="javascript:void(0)">라떼·초콜릿·티 </a></li>
+                <li><a href="javascript:void(0)">할리치노·빙수</a></li>
+                <li><a href="javascript:void(0)">스무디·주스</a></li>
+                <li><a href="javascript:void(0)">스파클링</a></li>
+                <li><a href="javascript:void(0)">푸드</a></li>
+                <li><a href="javascript:void(0)">MD상품</a></li>
+                <li><a href="javascript:void(0)">MD식품</a></li>
+              </ul>
+            </div>
+            <button class="menu_cat_next"><i class="ri-arrow-right-s-line"></i></button>
+          </div>
         </div>
         <div class="menu_item">
           <div class="swiper sec2_swiper">

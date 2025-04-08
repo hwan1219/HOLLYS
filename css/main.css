@@ -528,11 +528,16 @@ section {
   font-size: var(--main-h2);
   font-weight: 700;
 }
+#sec2 .menu_cat_wrapper {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 8rem;
+}
 #sec2 .menu_cat {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem 2.4rem;
-  margin-bottom: 8rem;
 }
 #sec2 .menu_cat li {
   height: 4rem;
@@ -597,11 +602,11 @@ section {
   width: 48px;
   transform: translateX(calc(447px / 2));
 }
-#sec2 button {
+#sec2 .sec2_btn {
   gap: 2rem;
   margin: 0 auto;
 }
-#sec2 button:hover {
+#sec2 .sec2_btn:hover {
   background: rgba(17, 17, 17, 0.1);
   border: 1px solid rgba(17, 17, 17, 0.5);
 }
