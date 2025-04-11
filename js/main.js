@@ -305,7 +305,7 @@ const menuBtn = document.querySelectorAll('#sec2 .menu_cat a')
 const activeTarget = document.querySelectorAll('#sec2 .menu_cat li')
 
 let swiperInstance;
-let currentMenuIndex
+let currentMenuIndex;
 
 menuBtn.forEach((btn, i) => {
   btn.addEventListener('click', (e) => {
@@ -319,16 +319,6 @@ menuBtn.forEach((btn, i) => {
     activeTarget[i].classList.add('active');
 
     renderSlides(menuData[i]);
-
-    // if(menuItems[4]) {
-    //   const fixedWidth = document.querySelector('.fixed_width');
-    //   fixWidth.style.cssText = `
-    //     overflow: hidden;
-    //     width: calc(447 * 3)px;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //   `
-    // }
   });
 });
 
@@ -467,7 +457,8 @@ renderSlides(coffeeMenu);
 // menu_cat 탭 가로 슬라이딩
 // menuItem[4] - 스파클링 메뉴
 // 3개 센터배치 loop 방법
-
+// resize 방법으로 첫번째 탭 왼쪽값 0일때
+// 마지맙 탭 offsetLeft 값 최대치일때 느낌으로
 
 
 
