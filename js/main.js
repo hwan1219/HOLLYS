@@ -1,3 +1,14 @@
+// common
+
+const links = document.querySelectorAll('a')
+links.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+  })
+})
+
+
+
 // 
 // 
 // header
@@ -66,7 +77,7 @@ const langIco = document.querySelector('.lang_wrap button i')
 const langA = document.querySelectorAll('.lang_wrap a')
 
 /* langBtn.addEventListener('click', function() {
-  if (langList.classList.contains('active')) {
+  if(langList.classList.contains('active')) {
     langList.classList.remove('active');
     langIco.classList.remove('iactive');
   } else {
@@ -332,8 +343,8 @@ window.addEventListener('resize', () => {
 
   const currentSlides = document.querySelectorAll('#sec2 .swiper-wrapper .swiper-slide').length;
 
-  if (currentMenuIndex === 4) { // sparklingMenu
-    if (isWidening && currentSlides === 6) {
+  if(currentMenuIndex === 4) { // sparklingMenu
+    if(isWidening && currentSlides === 6) {
       renderSlides(menuData[4]);
     } else if (isNarrowing && currentSlides === 3) {
       renderSlides(menuData[4]);
@@ -345,7 +356,7 @@ window.addEventListener('resize', () => {
 
 
 function renderSlides(menuItems) {
-  if (swiperInstance) {
+  if(swiperInstance) {
     swiperInstance.destroy(true, true);
     swiperInstance = null;
   }
@@ -382,7 +393,7 @@ function renderSlides(menuItems) {
       const slide = document.createElement('div');
       slide.className = 'swiper-slide';
       slide.innerHTML = `
-        <a href="javascript:void(0)">${item.img}</a>
+        <a href="#">${item.img}</a>
         <p>${item.name}</p>
       `;
       menuSwiperWrapper.appendChild(slide);
@@ -391,17 +402,15 @@ function renderSlides(menuItems) {
       const slide = document.createElement("div");
       slide.className = "swiper-slide";
       slide.innerHTML = `
-        <a href="javascript:void(0)">${item.img}</a>
+        <a href="#">${item.img}</a>
         <p>${item.name}</p>
       `;
       menuSwiperWrapper.appendChild(slide);
     });
   }
   
-  // 25.04.06 am02:57
-  // 병신같은 스와이퍼와의 전쟁.. 쉬운길을 마다하고 가시밭길을 선택했지만 8시간만에 결국 패배를 인정하다..
   // Swiper Loop Warning: The number of slides is not enough for loop mode, it will be disabled or not function properly. You need to add more slides (or make duplicates) or lower the values of slidesPerView and slidesPerGroup parameters
-  // 반드시 복수할 것..
+  // 추후 다시 확인
   
   if(window.innerWidth >= 1280) {
     if(menuItems.length >= 5) {
@@ -453,15 +462,23 @@ function initSwiperSec() {
 
 renderSlides(coffeeMenu);
 
-// #sec2 swiper
-// menu_cat 탭 가로 슬라이딩
-// menuItem[4] - 스파클링 메뉴
-// 3개 센터배치 loop 방법
-// resize 방법으로 첫번째 탭 왼쪽값 0일때
-// 마지맙 탭 offsetLeft 값 최대치일때 느낌으로
-
 
 
 //
 //
-// 
+// sec4
+
+const storeInput = document.querySelector('#sec4 .store_search input')
+const storeButton = document.querySelector('#sec4 .store_search button')
+
+storeInput.addEventListener('input', () => {
+  if(storeInput.value.trim() !== '') {
+    storeButton.classList.add('active');
+  } else {
+    storeButton.classList.remove('active');
+  }
+})
+
+document.querySelector('#sec4 .store_search form').addEventListener('submit', (e) => {
+  e.preventDefault();
+})
