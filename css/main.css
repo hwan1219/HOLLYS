@@ -711,7 +711,7 @@ h2 {
   height: 70rem;
 }
 #sec4 .store_info .store_search_wrap {
-  background: linear-gradient(to bottom, #111, transparent 80%), url(../img/store/GrandOpening_02.jpg) no-repeat center;
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.7), transparent 80%), url(../img/store/GrandOpening_02.jpg) no-repeat center;
   background-size: cover;
   flex-grow: 1;
 }
@@ -720,19 +720,31 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  margin-top: 8rem;
+  padding: 8rem 10rem;
 }
 #sec4 .store_info .store_search p {
   color: #fff;
   font-size: 3.2rem;
 }
-#sec4 .store_info .store_search form {}
+#sec4 .store_info .store_search form {
+  position: relative;
+  display: flex;
+  color: rgba(17, 17, 17, 0.5);
+  font-size: 2.4rem;
+}
 #sec4 .store_info .store_search form input {
-  
-  width: 500px;
+  display: flex;
+  padding: 0 3.6rem;
+  max-width: 50rem;
+  height: 72px;
+  flex-grow: 1;
+  border-radius: 50px;
 }
 #sec4 .store_info .store_search form button {
-
+  position: absolute;
+  right: 3.6rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 #sec4 .store_info .store_new {
   width: 44rem
