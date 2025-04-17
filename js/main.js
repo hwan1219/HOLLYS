@@ -337,10 +337,8 @@ let previousWidth = window.innerWidth;
 
 window.addEventListener('resize', () => {
   const currentWidth = window.innerWidth;
-
   const isWidening = previousWidth <= 1279 && currentWidth >= 1280;
   const isNarrowing = previousWidth >= 1280 && currentWidth <= 1279;
-
   const currentSlides = document.querySelectorAll('#sec2 .swiper-wrapper .swiper-slide').length;
 
   if(currentMenuIndex === 4) { // sparklingMenu
@@ -350,10 +348,8 @@ window.addEventListener('resize', () => {
       renderSlides(menuData[4]);
     }
   }
-
   previousWidth = currentWidth;
 });
-
 
 function renderSlides(menuItems) {
   if(swiperInstance) {
@@ -459,7 +455,6 @@ function initSwiperSec() {
     },
   })
 }
-
 renderSlides(coffeeMenu);
 
 

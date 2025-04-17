@@ -39,7 +39,7 @@ h2 {
   font-size: 2.4rem;
   font-weight: 400;
   border: 1px solid #111;
-  border-radius: 5rem;
+  border-radius: 50px;
 }
 .view_more::after {
   content: '\F5DC';
@@ -211,7 +211,7 @@ h2 {
   height: 0;
   background: #fff;
   border: 0px solid #dedede;
-  border-radius: 1rem;
+  border-radius: 10px;
   transform: translateX(-50%);
   transition: all 0.3s linear;
 }
@@ -579,7 +579,8 @@ h2 {
   align-items: center;
   text-align: center;
   gap: 30px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   /* 이미지가 있든 없든, swiper는 슬라이드 자체의 width를 기준으로 slidesPerView 등을 계산함 */
 }
 #sec2 .sec2_swiper .swiper-slide img {
@@ -666,12 +667,12 @@ h2 {
 }
 #sec3 .sec3_txt p {
   opacity: 0.7;
-  margin-top: 6rem;
   font-size: 1.8rem;
   font-weight: 400;
 }
 #sec3 .sec3_txt p:nth-of-type(1) {
-  margin-bottom: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
 }
 #sec3 .sec3_txt p:nth-of-type(2) {
   line-height: 1.4em;
@@ -710,6 +711,7 @@ h2 {
   margin-top: 8rem;
   width: 100%;
   height: 70rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 #sec4 .store_info .store_search_wrap {
   background: linear-gradient(to bottom, rgba(17, 17, 17, 0.7), transparent 80%), url(../img/store/GrandOpening_02.jpg) no-repeat center;
@@ -740,7 +742,7 @@ h2 {
   width: 100%;
   max-width: 50rem;
   height: 7.2rem;
-  border-radius: 50px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(2px);
 }
@@ -759,12 +761,65 @@ h2 {
   color: #111;
 }
 #sec4 .store_info .store_new {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 4rem 5rem;
   width: 44rem;
   flex-shrink: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+#sec4 .store_info .store_new .store_new_wrap p:nth-child(2) {
+  margin-top: 1rem;
+  font-size: 4rem;
+  color: var(--main-color);
+}
+#sec4 .store_info .store_new .store_item div {
+  padding-bottom: 4.1rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+}
+#sec4 .store_info .store_new .store_item div:last-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+#sec4 .store_info .store_new .store_item .store_name {
+  margin-bottom: 2rem;
+}
+#sec4 .store_info .store_new .store_item dd {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgba(17, 17, 17, 0.5);
+}
+#sec4 .store_info .store_new .store_item dd:first-of-type {
+  margin-bottom: 1rem;
+}
+#sec4 .store_info .store_new .store_item dd.store_location::before {
+  content: '\EF09';
+  font-family: "remixicon";
+  font-size: 2.4rem;
+}
+#sec4 .store_info .store_new .store_item dd.store_number::before {
+  content: '\EFE9';
+  font-family: "remixicon";
+  font-size: 2.4rem;
 }
 @media screen and (max-width: 1023px) {
   #sec4 .store_info .store_new {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  #sec4 .store_info .store_search {
+    padding: 8rem 2rem;
+  }
+  #sec4 .store_info .store_search form input {
+    max-width: auto;
   }
 }
 /* main_sec4 end */
