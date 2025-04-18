@@ -309,14 +309,8 @@ const mdFoodsMenu = [
   }
 ];
 
-
-const menuData = [coffeeMenu, latteMenu, hollyccinoMenu, smoothieMenu ,sparklingMenu, foodMenu, mdGoodsMenu, mdFoodsMenu];
-const menuSwiperWrapper = document.querySelector('#sec2 .swiper-wrapper')
 const menuBtn = document.querySelectorAll('#sec2 .menu_cat a')
 const activeTarget = document.querySelectorAll('#sec2 .menu_cat li')
-
-let swiperInstance;
-let currentMenuIndex;
 
 menuBtn.forEach((btn, i) => {
   btn.addEventListener('click', (e) => {
@@ -333,23 +327,12 @@ menuBtn.forEach((btn, i) => {
   });
 });
 
-let previousWidth = window.innerWidth;
 
-window.addEventListener('resize', () => {
-  const currentWidth = window.innerWidth;
-  const isWidening = previousWidth <= 1279 && currentWidth >= 1280;
-  const isNarrowing = previousWidth >= 1280 && currentWidth <= 1279;
-  const currentSlides = document.querySelectorAll('#sec2 .swiper-wrapper .swiper-slide').length;
+const menuData = [coffeeMenu, latteMenu, hollyccinoMenu, smoothieMenu ,sparklingMenu, foodMenu, mdGoodsMenu, mdFoodsMenu];
+const menuSwiperWrapper = document.querySelector('#sec2 .swiper-wrapper')
 
-  if(currentMenuIndex === 4) { // sparklingMenu
-    if(isWidening && currentSlides === 6) {
-      renderSlides(menuData[4]);
-    } else if (isNarrowing && currentSlides === 3) {
-      renderSlides(menuData[4]);
-    }
-  }
-  previousWidth = currentWidth;
-});
+let swiperInstance;
+let currentMenuIndex;
 
 function renderSlides(menuItems) {
   if(swiperInstance) {
@@ -368,7 +351,7 @@ function renderSlides(menuItems) {
       const slide = document.createElement('div');
       slide.className = 'swiper-slide';
       slide.innerHTML = `
-        <a href="javascript:void(0)">${item.img}</a>
+        <a href="#">${item.img}</a>
         <p>${item.name}</p>
       `;
       menuSwiperWrapper.appendChild(slide);
@@ -378,7 +361,7 @@ function renderSlides(menuItems) {
         const slide = document.createElement("div");
         slide.className = "swiper-slide";
         slide.innerHTML = `
-          <a href="javascript:void(0)">${item.img}</a>
+          <a href="#">${item.img}</a>
           <p>${item.name}</p>
         `;
         menuSwiperWrapper.appendChild(slide);
@@ -456,6 +439,38 @@ function initSwiperSec() {
   })
 }
 renderSlides(coffeeMenu);
+
+
+let previousWidth = window.innerWidth;
+
+window.addEventListener('resize', () => {
+  const currentWidth = window.innerWidth;
+  const isWidening = previousWidth <= 1279 && currentWidth >= 1280;
+  const isNarrowing = previousWidth >= 1280 && currentWidth <= 1279;
+  const currentSlides = document.querySelectorAll('#sec2 .swiper-wrapper .swiper-slide').length;
+
+  if(currentMenuIndex === 4) { // sparklingMenu
+    if(isWidening && currentSlides === 6) {
+      renderSlides(menuData[4]);
+    } else if (isNarrowing && currentSlides === 3) {
+      renderSlides(menuData[4]);
+    }
+  }
+  previousWidth = currentWidth;
+});
+
+
+function updateItemBtnTransform() {
+  const itemBtnPrev = document.querySelector('#sec2 .sec2_btn_prev')
+  const itemBtnNext = document.querySelector('#sec2 .sec2_btn_next')
+  const isScreenSize = window.innerWidth > 400;
+  const transformValue = isScreenSize ? '400px' : `${window.innerWidth - 40}px`
+
+  itemBtnPrev.style.transform = `translateX(calc(-${transformValue} / 2))`
+  itemBtnNext.style.transform = `translateX(calc(${transformValue} / 2))`
+}
+updateItemBtnTransform();
+window.addEventListener('resize', updateItemBtnTransform);
 
 
 
