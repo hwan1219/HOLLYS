@@ -20,8 +20,8 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
 }
-section {
-  padding: 10rem 0;
+a, img {
+  -webkit-user-drag: none;
 }
 .container {
   max-width: 1520px;
@@ -468,7 +468,6 @@ h2 {
 /* main_sec1 */
 #sec1 {
   position: relative;
-  padding: 0;
 }
 #sec1 .sec1_swiper {
   height: 100vh;
@@ -526,6 +525,9 @@ h2 {
 
 
 /* main_sec2 */
+#sec2 {
+  padding: 10rem 0;
+}
 #sec2 .menu_cat_wrap {
   display: flex;
   align-items: center;
@@ -596,16 +598,15 @@ h2 {
 #sec2 .sec2_btn {
   position: absolute;
   bottom: 0;
+  width: 48px;
   cursor: pointer;
   z-index: 1;
 }
 #sec2 .sec2_btn_prev {
   left: 50%;
-  width: 48px;
 }
 #sec2 .sec2_btn_next {
   right: 50%;
-  width: 48px;
 }
 #sec2 .sec2_btn img {
   width: 100%;
@@ -621,6 +622,15 @@ h2 {
   background: rgba(17, 17, 17, 0.05);
   border: 1px solid rgba(17, 17, 17, 0.5);
 }
+@media screen and (max-width: 479px) {
+  #sec2 .sec2_swiper p {
+    padding-bottom: 8px;
+    font-size: 18px;
+  }
+  #sec2 .sec2_btn {
+    width: 40px;
+  }
+}
 /* main_sec2 end */
 
 
@@ -628,9 +638,6 @@ h2 {
 
 
 /* main_sec3 */
-#sec3 {
-  padding: 0;
-}
 #sec3 .sec3_wrap {
   background: url(../img/membership_giftcard/Mem_Gift.png) no-repeat center;
   background-size: cover;
@@ -664,7 +671,7 @@ h2 {
   text-align: center;
 }
 #sec3 .sec3_txt p {
-  opacity: 0.7;
+  opacity: 0.8;
   font-size: 1.8rem;
   font-weight: 400;
 }
@@ -703,7 +710,10 @@ h2 {
 
 
 
-/* main_sec4 */ 
+/* main_sec4 */
+#sec4 {
+  padding: 10rem 0 16rem;
+}
 #sec4 .store_info {
   display: flex;
   margin-top: 8rem;
@@ -812,7 +822,7 @@ h2 {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 479px) {
   #sec4 .store_info .store_search {
     padding: 8rem 2rem;
   }
@@ -827,7 +837,21 @@ h2 {
 
 
 /* main_sec5 */
-
+#sec5 {
+  padding-bottom: 10rem;
+}
+#sec5 .sec5_swiper {
+  margin-top: 8rem;
+}
+#sec5 .sec5_swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+#sec5 .sec5_swiper .swiper-wrapper .swiper-slide {
+  width: 33rem;
+}
+#sec5 .sec5_swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
 /* main_sec5 end */
 /***** main end *****/
 

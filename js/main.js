@@ -351,7 +351,7 @@ function renderSlides(menuItems) {
       const slide = document.createElement('div');
       slide.className = 'swiper-slide';
       slide.innerHTML = `
-        <a href="#">${item.img}</a>
+        <a href="javascript:void(0)">${item.img}</a>
         <p>${item.name}</p>
       `;
       menuSwiperWrapper.appendChild(slide);
@@ -361,7 +361,7 @@ function renderSlides(menuItems) {
         const slide = document.createElement("div");
         slide.className = "swiper-slide";
         slide.innerHTML = `
-          <a href="#">${item.img}</a>
+          <a href="javascript:void(0)">${item.img}</a>
           <p>${item.name}</p>
         `;
         menuSwiperWrapper.appendChild(slide);
@@ -372,7 +372,7 @@ function renderSlides(menuItems) {
       const slide = document.createElement('div');
       slide.className = 'swiper-slide';
       slide.innerHTML = `
-        <a href="#">${item.img}</a>
+        <a href="javascript:void(0)">${item.img}</a>
         <p>${item.name}</p>
       `;
       menuSwiperWrapper.appendChild(slide);
@@ -381,7 +381,7 @@ function renderSlides(menuItems) {
       const slide = document.createElement("div");
       slide.className = "swiper-slide";
       slide.innerHTML = `
-        <a href="#">${item.img}</a>
+        <a href="javascript:void(0)">${item.img}</a>
         <p>${item.name}</p>
       `;
       menuSwiperWrapper.appendChild(slide);
@@ -461,11 +461,13 @@ window.addEventListener('resize', () => {
 
 
 function updateItemBtnTransform() {
-  const itemBtnPrev = document.querySelector('#sec2 .sec2_btn_prev')
-  const itemBtnNext = document.querySelector('#sec2 .sec2_btn_next')
-  const isScreenSize = window.innerWidth > 400;
-  const transformValue = isScreenSize ? '400px' : `${window.innerWidth - 40}px`
+  const itemBtnPrev = document.querySelector('#sec2 .sec2_btn_prev');
+  const itemBtnNext = document.querySelector('#sec2 .sec2_btn_next');
+  const width = window.innerWidth;
 
+  const transformValue =
+    width >= 440 ? '400px' : `${width - 40}px`;
+  
   itemBtnPrev.style.transform = `translateX(calc(-${transformValue} / 2))`
   itemBtnNext.style.transform = `translateX(calc(${transformValue} / 2))`
 }
@@ -492,3 +494,20 @@ storeInput.addEventListener('input', () => {
 document.querySelector('#sec4 .store_search form').addEventListener('submit', (e) => {
   e.preventDefault();
 })
+
+
+
+//
+//
+// sec5
+
+const sec5swiper = new Swiper('.sec5_swiper', {
+  autoplay: {
+    delay: 0,
+  },
+  speed: 3000,
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  allowTouchMove: false,
+});
