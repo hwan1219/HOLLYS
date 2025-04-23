@@ -409,11 +409,11 @@ h2 {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(4px);
   z-index: 10;
-
-  /* bottom: 80px; - top bottom 같이 써서 오류
-     아래 코드로 대체 */
   top: 50%;
   transform: translateY(-50%);
+}
+.quick_menu.hidden {
+  display: none;
 }
 .quick_menu li {
   position: relative;

@@ -104,10 +104,12 @@ const allmenuClose = document.querySelector('.btn_allmenu_close')
 
 allmenuOpen.addEventListener('click', function() {
   allmenu.classList.add('allmenuOpen');
+  document.documentElement.style.overflow = 'hidden'
 });
 
 allmenuClose.addEventListener('click', function() {
   allmenu.classList.remove('allmenuOpen');
+  document.documentElement.style.overflow = 'auto'
 });
 
 
@@ -116,32 +118,43 @@ allmenuClose.addEventListener('click', function() {
 // 
 // quick_menu - 해당 코드 아래에 주석
 
-const quickMenu = document.querySelector('.quick_menu');
-let baseTop = parseInt(window.getComputedStyle(quickMenu).top, 10);
-// baseTop = quickMenu.getBoundingClientRect().top;
+function debounce(func, wait) {
+  let timeout; // 타이머를 저장할 변수
+  return function(...args) {
+    clearTimeout(timeout); // 이전 타이머 취소
+    timeout = setTimeout(() => {
+      func.apply(this, args);
+    }, wait);
+  };
+}
 
-// getComputedStyle().top, 10
-// 초기 top 값을 가져와서 숫자로 변환
-// 함수 안 , 뒤 숫자는 radix(진수) 지정
-// 사실상 10진법 외에는 안쓰임 (아마도)
-
-// quickMenu.style.top은 값을 가져오지 못함
-// css 외부파일을 인식하지 못하기 때문
-// getComputedStyle() 메소드는 인자로 전달받은 엘리먼트에 최종적으로 적용된 모든 CSS 속성 값을 담은 객체를 반환
-
-// window.getComputedStyle().top은 실제 화면에서 그 요소가 top에서 얼마나 떨어져 있는지를 숫자로 계산해서 알려줌
-// *이 요소가 핵심*
-// absolute 포지션을 준 오브젝트가 fixed처럼 작동하게 해줌
-
-window.addEventListener('scroll', function() {
+function updateQuickMenuPosition() {
   const scrollTop = window.scrollY;
-  // 초기값 0
-  const targetTop = scrollTop + baseTop;
-  // 초기값 0에 window.getComputedStyle().top으로 가져온 값을 더함
-
-  quickMenu.style.transition = 'top 1s ease';
+  const targetTop = scrollTop + (window.innerHeight / 2);
   quickMenu.style.top = `${targetTop}px`;
-});
+  quickMenu.style.transform = 'translateY(-50%)';
+  quickMenu.style.transition = 'top 1s ease';
+}
+
+function toggleQuickMenuVisibility() {
+  if (window.innerHeight < 600) {
+    quickMenu.classList.add('hidden');
+  } else {
+    quickMenu.classList.remove('hidden');
+  }
+}
+
+const quickMenu = document.querySelector('.quick_menu');
+
+
+updateQuickMenuPosition();
+toggleQuickMenuVisibility();
+
+window.addEventListener('scroll', updateQuickMenuPosition);
+window.addEventListener('resize', debounce(() => {
+  updateQuickMenuPosition();
+  toggleQuickMenuVisibility();
+}, 10));
 
 
 
@@ -505,9 +518,12 @@ const sec5swiper = new Swiper('.sec5_swiper', {
   autoplay: {
     delay: 0,
   },
+  observer: true,
+  observeParents: true,
   speed: 3000,
   loop: true,
   slidesPerView: 'auto',
+  centeredSlides: true,
   spaceBetween: 20,
   allowTouchMove: false,
 });
