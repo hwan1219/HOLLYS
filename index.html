@@ -180,11 +180,7 @@
       </div>
     </header>
     
-    <!-- <div class="quick_menu"> -->
-    <!-- quick_menu가 js에서 움직이는 변수로 지정되어 있는데 변수로 지정되어 있는 요소한테 background-color 줬을때 background-color 속성이 함께 이동하지 않음 --> 
-    <!-- 인라인 css가 아니고 외부 css 파일에서 적용되어서 js에서 인식하지 못하는 걸수도 bottom 값 또한 js 파일 내에서 getComputedStyle(js 참고)로 가져왔음 -->
-    <!-- bottom 외에 있는 style 속성은 position, right 뿐인데 pos:absolute와, right:40은 처음 quick_menu의 위치만 참고할 뿐, js로 인해 영향받지 않는 건가 -->
-    <!-- top: calc(100% - 80px); transform: translateY(-100%); bottom: 80px; 대신 쓰니까 해결됨 top과 bottom의 값이 함께 쓰여서 생긴 오류인듯 -->
+    
     <ul class="quick_menu">
       <li><a href="#">
         <i class="ri-store-2-fill"></i>
@@ -203,8 +199,8 @@
         <p>기업특판</p>
       </a></li>
     </ul>
-    <!-- </div> -->
-    
+
+
     <main id="main_content">
       <section id="sec1">
         <div class="swiper sec1_swiper">
@@ -234,7 +230,7 @@
             <button class="menu_cat_btn_prev menu_cat_btn">
               <i class="ri-arrow-left-s-line"></i>
             </button>
-            <div class="menu_cat_visible">
+            <div class="menu_cat_scroll">
               <ul class="menu_cat">
                 <li class="active"><a href="#">COFFEE</a></li>
                 <li><a href="#">라떼·초콜릿·티 </a></li>
@@ -256,7 +252,6 @@
             <div class="swiper-wrapper">
 
             </div>
-
             <div class="sec2_btn_prev sec2_btn">
               <img src="img/icon/ico_arrow_left.svg" alt="">
             </div>
@@ -264,7 +259,6 @@
               <img src="img/icon/ico_arrow_right.svg" alt="">
             </div>
           </div>
-          
         </div>
         <button class="btn_common view_more">VIEW MORE</button>
       </section>
@@ -391,7 +385,7 @@
             <li><a href="#">무빙 딜라이트</a></li>
             <li><a href="#">가맹문의 및 절차</a></li>
           </ul>
-          <dl class="footer_top_cs">
+          <dl class="footer_top_cs pc">
             <div>
               <dt>Address</dt>
               <dd>서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</dd>
@@ -412,27 +406,25 @@
               <li><a href="#">고객문의</a></li>
               <li><a href="#">BI 소개</a></li>
             </ul>
-            <div class="footer_bottom_info">
-              <ul class="footer_bottom_cs">
-                <li class="mo">서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</li>
-                <li class="mo">고객센터 : 02-2188-7100</li>
-                <li>(주)케이지에프앤비</li>
-                <li>대표이사 : 이종현</li>
-                <li>사업자 등록번호 : 211-87-61044</li>
-                <li>통신판매업 : 제2019-서울종로-0193호</li>
-                <li>대표전화 : 02-2188-7100</li>
-                <li>가맹문의 : 02-6350-7229</li>
-              </ul>
-            </div>
+            <ul class="footer_bottom_cs">
+              <li class="mo">서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</li>
+              <li class="mo">고객센터 : 02-2188-7100</li>
+              <li>(주)케이지에프앤비</li>
+              <li>대표이사 : 이종현</li>
+              <li class="margin_auto">사업자 등록번호 : 211-87-61044</li>
+              <li>통신판매업 : 제2019-서울종로-0193호</li>
+              <li>대표전화 : 02-2188-7100</li>
+              <li class="margin_auto">가맹문의 : 02-6350-7229</li>
+            </ul>
             <p class="footer_bottom_copy">COPYRIGHT &copy; KG F&B. ALL Rights Reserved</p>
           </div>
           <div class="footer_sns">
             <a href="#">
-              <!-- <img src="img/footer/footer_logo_insta.png" alt=""> -->
+              <img src="img/footer/footer_logo_insta.png" alt="">
               <span class="blind">인스타그램</span>
             </a>
             <a href="#">
-              <!-- <img src="img/footer/footer_logo_facebook.png" alt=""> -->
+              <img src="img/footer/footer_logo_facebook.png" alt="">
               <span class="blind">페이스북</span>
             </a>
           </div>

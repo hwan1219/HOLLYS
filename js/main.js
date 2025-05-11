@@ -7,6 +7,16 @@ links.forEach(link => {
   })
 })
 
+function debounce(func, wait) {
+  let timeout; // 타이머를 저장할 변수
+  return function(...args) {
+    clearTimeout(timeout); // 이전 타이머 취소
+    timeout = setTimeout(() => {
+      func.apply(this, args);
+    }, wait);
+  };
+}
+
 
 
 // 
@@ -104,12 +114,11 @@ const allmenuClose = document.querySelector('.btn_allmenu_close')
 
 allmenuOpen.addEventListener('click', function() {
   allmenu.classList.add('allmenuOpen');
-  document.documentElement.style.overflow = 'hidden'
+  // document.documentElement.style.overflow = 'hidden'
 });
-
 allmenuClose.addEventListener('click', function() {
   allmenu.classList.remove('allmenuOpen');
-  document.documentElement.style.overflow = 'auto'
+  // document.documentElement.style.overflow = 'auto'
 });
 
 
@@ -118,19 +127,16 @@ allmenuClose.addEventListener('click', function() {
 // 
 // quick_menu - 해당 코드 아래에 주석
 
-function debounce(func, wait) {
-  let timeout; // 타이머를 저장할 변수
-  return function(...args) {
-    clearTimeout(timeout); // 이전 타이머 취소
-    timeout = setTimeout(() => {
-      func.apply(this, args);
-    }, wait);
-  };
-}
+const quickMenu = document.querySelector('.quick_menu');
 
 function updateQuickMenuPosition() {
   const scrollTop = window.scrollY;
-  const targetTop = scrollTop + (window.innerHeight / 2);
+  const footerTop = document.querySelector('footer').offsetTop;  
+
+  let targetTop = scrollTop + (window.innerHeight / 2);
+  const maxTop = footerTop - (quickMenu.offsetHeight / 2)
+  if(targetTop > maxTop) targetTop = maxTop
+  
   quickMenu.style.top = `${targetTop}px`;
   quickMenu.style.transform = 'translateY(-50%)';
   quickMenu.style.transition = 'top 1s ease';
@@ -144,7 +150,7 @@ function toggleQuickMenuVisibility() {
   }
 }
 
-const quickMenu = document.querySelector('.quick_menu');
+
 
 
 updateQuickMenuPosition();
@@ -165,7 +171,7 @@ window.addEventListener('resize', debounce(() => {
 const sec1swiper = new Swiper('.sec1_swiper', {
   // Optional parameters
   autoplay: {
-    delay: 4000,
+    delay: 3000,
   },
   loop: true,
 
@@ -322,8 +328,24 @@ const mdFoodsMenu = [
   }
 ];
 
-const menuBtn = document.querySelectorAll('#sec2 .menu_cat a')
+const menuBtnPrev = document.querySelector('#sec2 .menu_cat_btn_prev')
+const menuBtnNext = document.querySelector('#sec2 .menu_cat_btn_next')
+const menuScroll = document.querySelector('#sec2 .menu_cat_scroll')
+const menuCat = document.querySelector('#sec2 .menu_cat')
 const activeTarget = document.querySelectorAll('#sec2 .menu_cat li')
+const menuBtn = document.querySelectorAll('#sec2 .menu_cat a')
+
+function menuBtnVisible() {
+  if (menuCat.scrollWidth > menuScroll.clientWidth) {
+    menuBtnPrev.style.display = 'block';
+    menuBtnNext.style.display = 'block';
+  } else {
+    menuBtnPrev.style.display = 'none';
+    menuBtnNext.style.display = 'none';
+  }
+}
+menuBtnVisible();
+window.addEventListener('resize', menuBtnVisible);
 
 menuBtn.forEach((btn, i) => {
   btn.addEventListener('click', (e) => {
@@ -527,3 +549,9 @@ const sec5swiper = new Swiper('.sec5_swiper', {
   spaceBetween: 20,
   allowTouchMove: false,
 });
+
+function sec5swiperResize() {
+  sec5swiper.autoplay.start();
+}
+window.addEventListener('resize', debounce(sec5swiperResize, 300));
+// 브라우저 탭이 여러개 있고 그중 한개의 탭을 새 창으로 꺼낼 때 Swiper 내부의 루프 구조, 오토플레이 상태가 깨짐. 그로 인해 swiper가 멈추는 현상 방지
