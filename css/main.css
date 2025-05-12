@@ -882,6 +882,9 @@ h2 {
   font-size: 3.2rem;
   font-weight: 700;
 }
+#footer .footer_top .footer_top_menu li a:hover {
+  color: var(--main-color);
+}
 #footer .footer_top .footer_top_cs {
   font-size: 1.8rem;
   font-weight: 700;
@@ -910,6 +913,9 @@ h2 {
   flex-wrap: wrap;
   gap: 5rem;
   font-weight: 700;
+}
+#footer .footer_bottom .footer_bottom_left .footer_bottom_menu li a:hover {
+  color: var(--main-color);
 }
 #footer .footer_bottom .footer_bottom_left .footer_bottom_cs {
   display: flex;
