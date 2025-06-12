@@ -545,11 +545,7 @@ h2 {
   margin-left: 4px;
 }
 #sec2 .menu_cat_scroll {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow-x: hidden;
 }
 #sec2 .menu_cat {
   display: flex;
@@ -624,6 +620,16 @@ h2 {
   border: 1px solid rgba(17, 17, 17, 0.5);
 }
 @media screen and (max-width: 479px) {
+  #sec2 .menu_cat_btn {
+    display: none;
+  }
+  #sec2 .menu_cat_scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
   #sec2 .sec2_swiper p {
     padding-bottom: 8px;
     font-size: 18px;
