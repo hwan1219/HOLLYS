@@ -535,7 +535,7 @@ h2 {
   margin-bottom: 8rem;
 }
 #sec2 .menu_cat_btn {
-  display: none;
+  display: block;
   font-size: 4rem;
 }
 #sec2 .menu_cat_btn_prev {
@@ -545,7 +545,11 @@ h2 {
   margin-left: 4px;
 }
 #sec2 .menu_cat_scroll {
-  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 #sec2 .menu_cat {
   display: flex;

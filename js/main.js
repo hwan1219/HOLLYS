@@ -335,17 +335,19 @@ const menuCat = document.querySelector('#sec2 .menu_cat')
 const activeTarget = document.querySelectorAll('#sec2 .menu_cat li')
 const menuBtn = document.querySelectorAll('#sec2 .menu_cat a')
 
-function menuBtnVisible() {
-  if (menuCat.scrollWidth > menuScroll.clientWidth) {
-    menuBtnPrev.style.display = 'block';
-    menuBtnNext.style.display = 'block';
-  } else {
-    menuBtnPrev.style.display = 'none';
-    menuBtnNext.style.display = 'none';
-  }
-}
-menuBtnVisible();
-window.addEventListener('resize', menuBtnVisible);
+
+
+// function menu_prev_next_Visible() {
+//   if (menuCat.scrollWidth > menuScroll.clientWidth) {
+//     menuBtnPrev.style.display = 'block';
+//     menuBtnNext.style.display = 'block';
+//   } else {
+//     menuBtnPrev.style.display = 'none';
+//     menuBtnNext.style.display = 'none';
+//   }
+// }
+// menu_prev_next_Visible();
+// window.addEventListener('resize', menu_prev_next_Visible);
 
 menuBtn.forEach((btn, i) => {
   btn.addEventListener('click', (e) => {
