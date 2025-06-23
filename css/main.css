@@ -538,6 +538,13 @@ h2 {
   display: block;
   font-size: 4rem;
 }
+#sec2 .menu_cat_btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+#sec2 .menu_cat_btn:disabled i {
+  color: rgba(17, 17, 17, 0.7);
+}
 #sec2 .menu_cat_btn_prev {
   margin-right: 4px;
 }
@@ -550,8 +557,7 @@ h2 {
 #sec2 .menu_cat {
   display: flex;
   gap: 2.4rem;
-  will-change: transform;
-  transition: all 0.3 ease;
+  transition: transform 0.3s ease;
 }
 #sec2 .menu_cat li {
   height: 3.6rem;

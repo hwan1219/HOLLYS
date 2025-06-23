@@ -335,19 +335,66 @@ const menuCat = document.querySelector('#sec2 .menu_cat')
 const activeTarget = document.querySelectorAll('#sec2 .menu_cat li')
 const menuBtn = document.querySelectorAll('#sec2 .menu_cat a')
 
+function menu_prev_next_Visible() {
+// translate 를 통해 움ㅈ
+  if (menuCat.scrollWidth > menuScroll.clientWidth && window.innerWidth > 479) {
+    menuBtnPrev.style.display = 'block';
+    menuBtnNext.style.display = 'block';
+  } else {
+    menuBtnPrev.style.display = 'none';
+    menuBtnNext.style.display = 'none';
+  }
+}
+menu_prev_next_Visible();
+window.addEventListener('resize', menu_prev_next_Visible);
 
+let currentIndex = 0;
+let spacing = 0;
+let tabWidths = [];
 
-// function menu_prev_next_Visible() {
-//   if (menuCat.scrollWidth > menuScroll.clientWidth) {
-//     menuBtnPrev.style.display = 'block';
-//     menuBtnNext.style.display = 'block';
-//   } else {
-//     menuBtnPrev.style.display = 'none';
-//     menuBtnNext.style.display = 'none';
-//   }
-// }
-// menu_prev_next_Visible();
-// window.addEventListener('resize', menu_prev_next_Visible);
+function updateSpacing() {
+  const remInPx = parseFloat(getComputedStyle(document.documentElement).fontSize);
+  return 2.4 * remInPx;
+}
+function updateTabWidths() {
+  spacing = updateSpacing();
+  tabWidths = Array.from(activeTarget).map(tab => tab.offsetWidth + spacing);
+}
+// activeTarget(NodeList = querySelectorAll의 반환값)
+// map(), reduce() 와 같은 배열 메서드를 쓰기 위해 노드리스트에서 배열로 변환
+function getOffsetByIndex(index) {
+  return tabWidths.slice(0, index).reduce((sum, w) => sum + w, 0)
+}
+function updateMenuPosition() {
+  const offset = getOffsetByIndex(currentIndex);
+  const maxOffset = menuCat.scrollWidth - menuScroll.offsetWidth;
+  // 스크롤바를 실제로 가지고 있는 요소만 scrollWidth 와 offsetWidth 간의 차이가 생김
+  // 스크롤바를 가지고 있는 객체는 부모 요소인 menuScroll
+  const finalOffset = Math.min(offset, maxOffset)
+
+  menuCat.style.transform = `translate(-${finalOffset}px)`
+
+  menuBtnPrev.disabled = finalOffset <= 0;
+  menuBtnNext.disabled = finalOffset >= maxOffset;
+}
+// window.addEventListener('resize', debounce(updateTabWidths, 300));
+window.addEventListener('resize', debounce(() => {
+  updateTabWidths();
+  updateMenuPosition();
+}, 300));
+
+// 초기 실행
+updateTabWidths();
+updateMenuPosition();
+
+menuBtnPrev.addEventListener('click', () => {
+  currentIndex -= 1
+  updateMenuPosition()
+})
+menuBtnNext.addEventListener('click', () => {
+  currentIndex += 1
+  updateMenuPosition()
+})
 
 menuBtn.forEach((btn, i) => {
   btn.addEventListener('click', (e) => {
