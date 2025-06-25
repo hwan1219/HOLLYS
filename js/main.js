@@ -336,7 +336,6 @@ const activeTarget = document.querySelectorAll('#sec2 .menu_cat li')
 const menuBtn = document.querySelectorAll('#sec2 .menu_cat a')
 
 function menu_prev_next_Visible() {
-// translate 를 통해 움ㅈ
   if (menuCat.scrollWidth > menuScroll.clientWidth && window.innerWidth > 479) {
     menuBtnPrev.style.display = 'block';
     menuBtnNext.style.display = 'block';
@@ -399,6 +398,8 @@ menuBtnNext.addEventListener('click', () => {
 menuBtn.forEach((btn, i) => {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
+
+    if(currentMenuIndex === i) return;
 
     currentMenuIndex = i;
 
@@ -487,6 +488,17 @@ function renderSlides(menuItems) {
   // 새로운 스와이퍼 생성
   // DOM 안에 slide가 생성되어 있어야 인식함 menuItems.forEach문 앞에 적으면 DOM에 아무것도 작성되어 있지 않기 때문에 정상적으로 작동하지 않음
   // js defer를 쓰는 이유와 같은듯
+
+  const swiperEl = document.querySelector('.sec2_swiper')
+  swiperEl.style.opacity = '0';
+  swiperEl.style.transform = 'translateY(50px)';
+  swiperEl.style.transition = 'none';
+
+  setTimeout(() => {
+    swiperEl.style.opacity = '1';
+    swiperEl.style.transform = 'translateY(0)'
+    swiperEl.style.transition = 'all 0.5s ease';
+  }, 0)
 }
 
 function initSwiper() {
