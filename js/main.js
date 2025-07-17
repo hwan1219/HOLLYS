@@ -414,6 +414,7 @@ menuBtn.forEach((btn, i) => {
 
 
 const menuData = [coffeeMenu, latteMenu, hollyccinoMenu, smoothieMenu ,sparklingMenu, foodMenu, mdGoodsMenu, mdFoodsMenu];
+const menuItemEl = document.querySelector('#sec2 .menu_item')
 const menuSwiperWrapper = document.querySelector('#sec2 .swiper-wrapper')
 
 let swiperInstance;
@@ -421,6 +422,9 @@ let currentMenuIndex;
 
 function renderSlides(menuItems) {
   if(swiperInstance) {
+    const currentHeight = document.querySelector('.sec2_swiper').offsetHeight;
+    menuItemEl.style.height = currentHeight + 'px';
+
     swiperInstance.destroy(true, true);
     swiperInstance = null;
   }
